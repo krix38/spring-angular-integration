@@ -101,7 +101,7 @@
 						<goals>
 							<goal>install-node-and-yarn</goal>
 						</goals>
-						<phase>generate-sources</phase>
+						<phase>initialize</phase>
 					</execution>
 					<execution>
 						<id>yarn install</id>
@@ -111,6 +111,7 @@
 						<configuration>
 							<arguments>install</arguments>
 						</configuration>
+						<phase>initialize</phase>
 					</execution>
 					<execution>
 						<id>yarn lint</id>
